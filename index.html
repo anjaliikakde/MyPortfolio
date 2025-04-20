@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Anjali Kakde's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+/*======================================
+//--//-->   ABOUT HRS
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+  </head>
+	
+</body>	
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Anjali Kakde</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blogs-section" class="nav-link"><span>Blogs</span></a></li>
+					<li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+<!-- about -->
+
+	  <section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+		 <div class="slider-item ">
+			<div class="overlay"></div>
+		   <div class="container">
+			<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+			  <div class="one-third js-fullheight order-md-last img" style="background-image:url(image/try2.gif); background-size: 90% auto;">
+				 <div class="overlay"></div>
+				</div>
+				<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+					<div class="text">
+						<span class="subheading">Hello!</span>
+					  <h1 class="mb-4 mt-3">I'm <span>Anjali Kakde</span></h1>
+
+					  <!-- Element to contain animated typing -->
+					  <span id="typing-animation"></span>
+
+					  <script>
+
+					  // Initialize the typing animation
+					  const typingAnimationElement = document.getElementById('typing-animation');
+
+					  // Create an array of typing text
+					  const typingTexts = [
+					  'Data Nerd',
+					  'Engineer',
+					  'Blogger',
+					  ];
+
+					  // Create a function to display the typing animation for a given text
+					  function playTypingAnimation(text) {
+					  // Loop through each character and add it to the element
+					  for (let i = 0; i < text.length; i++) {
+						  setTimeout(() => {
+						  typingAnimationElement.textContent += text[i];
+						  }, i * 200); // Increase the delay to slow down the typing animation
+					  }
+
+					  // Once the animation is complete, reset the text and start over
+					  setTimeout(() => {
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+					  }, text.length * 200);
+					  }
+
+					  // Start the typing animation loop
+					  playTypingAnimation(typingTexts[0]);
+
+					  </script>
+
+					  <br>
+					  <br>
+					  <h2>CSE - AIML Student</h2>
+					  <!-- <h2>AI Engineer/ Data Scientist</h2> -->
+					  <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+					  <!-- <br> -->
+					  <p><a href="https://medium.com/@anjalikakde48" class="btn btn-primary py-3 px-4">Blogs</a> 
+						  <a href="https://github.com/anjaliikakde" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+						  <a href="https://www.kaggle.com/anjaliikakde" class="btn btn-primary py-3 px-4">Kaggle</a> </p>
+
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+	  </div>
+  </section>
+
+<!--  -->
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<div class="container">
+		<div class="row">
+			<div class="row d-flex align-items-stretch">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay">
+							<div class="row">
+								<div class="col-sm-6 col-md-5">
+									<div class="about-img">
+										<img src="image/Anjali_pic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-7">
+									<div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Anjali Kakde</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Scientist</span></p>
+										<!-- <p><span class="title-s">Experience: </span> <span>2+ Years (Projects & Research)</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Bhopal, India</span></p>
+									</div>
+								</div>
+							</div>
+<br>
+							<div class="skill-mf">
+								<p class="title-s">Skills</p>
+								<span>Machine Learning & Deep Learning</span> <span class="pull-right">90%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+
+								<span>Data Visualization</span> <span class="pull-right">85%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+
+								<span>Python & It's Libraries </span> <span class="pull-right">85%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+
+								<span>Mathematics</span> <span class="pull-right">90%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+
+								<span>Databases</span> <span class="pull-right">80%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+
+								<span>Tools: Git, Github, Docker</span> <span class="pull-right">85%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+
+								<span>Learning: Generative AI</span> <span class="pull-right">30%</span>
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+										aria-valuemax="100"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+
+							<p>✨ I'm Anjali Kakde, a curious mind and a passionate learner, currently pursuing my B.Tech degree in Artificial Intelligence and Machine Learning at SISTec-R, Bhopal.<br>
+
+
+								My journey into tech began with a spark—an urge to understand how machines think, learn, and solve problems. That curiosity quickly grew into a deep fascination with AI, where data meets imagination and logic turns into innovation. I found myself drawn not just to the “how,” but the “why”—why certain models work, why patterns matter, and how intelligent systems can make a real difference in the world.
+								<br>
+								I spend most of my time building models, experimenting with algorithms, and diving deep into Generative AI, especially GANs. What I love the most is that moment when abstract math turns into something visual, useful, or even beautiful. That’s where I feel most at home.
+								
+								Outside of building, I love sharing what I learn. Writing on Medium helps me break down tough topics in a simple way, and hopefully make the journey a little easier for others just getting started.</p>
+								
+
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Profile:</span> <span>Data Science, AI & Machine Learning</span></li>
+								<!-- <li class="d-flex"><span>Domain:</span> <span>Data Analysis, Computer Vision, NLP, Satellite Imaging</span></li> -->
+								<li class="d-flex"><span>Education:</span> <span>Undergraduate in AIML, SISTEC-R, Bhopal</span></li>
+								<li class="d-flex"><span>Programming:</span> <span>Python, C, Java, C++ (Basics), HTML, CSS</span></li>
+								<li class="d-flex"><span>Libraries &amp; Frameworks:</span> <span>TensorFlow, Keras, Scikit-learn, NumPy, Pandas, Matplotlib, Seaborn, Streamlit, Flask</span></li>
+								<li class="d-flex"><span>Tools:</span> <span> Git, Docker</span></li>
+								<li class="d-flex"><span>Databases:</span> <span>MySQL, MongoDB, Vector DB</span></li>
+								<li class="d-flex"><span>Concepts:</span> <span>Machine Learning, Deep Learning, Data Visualization, Mathematics</span></li>
+								<li class="d-flex"><span>Learning:</span> <span>Generative AI</span></li>
+								<li class="d-flex"><span>Interests:</span> <span>Reading, Blogging, AI Model development</span></li>
+								<li class="d-flex"><span>Languages:</span> <span>English, Hindi, Marathi</span></li>
+
+							</ul>
+						</div>
+					</div>
+
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p class="mb-4">
+								<span class="number" data-number="7">7</span> <span>+</span>
+								<span>&nbsp; Projects Completed</span>
+							</p>
+							<p><a href="https://www.linkedin.com/in/anjali-kakde-009932238" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--  -->
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          		<div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <!-- <p>I’ve honed my expertise internationally, collaborating with teams in Germany and India. At Livello Technologies, I led cross-functional initiatives like deploying dynamic SARIMA-X models and refining microservice architecture for performance. During my time at SYSKRON, I tackled data drift challenges for reinforcement learning systems in industrial settings.</p> -->
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+
+	<!-- Education -->
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="resume-wrap ftco-animate">
+				<span class="date">2022-2026</span>
+				<h2>Bachelor of Engineering - Computer Science with Artificial Intelligence and Machine Learning</h2>
+				<span class="position">Sagar Institute of Science Technology and Research, Bhopal</span>
+				<p class="mt-4">Grade: First class distinction.<br><br> </p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="resume-wrap ftco-animate">
+				<span class="date">2020-2022</span>
+				<h2>10th and 12th Grade</h2>
+				
+				<span class="position">Government Higher Secondary School, Berdi (12th)</span>
+				<p class="mt-4">
+					<strong>12th Grade:</strong> 92.00%<br>
+				</p>
+				<span class="position">Sankalp Higher Secondary School, Sausar (10th)</span>
+				<p class="mt-4">
+					<strong>10th Grade:</strong> 91.50%
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid d-flex justify-content-center align-items-center" style="height: 50vh;">
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="##" class="btn btn-primary py-4 px-5">Download CV</a></p>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!-- projects -->
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of the projects that I have worked on.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/anjaliikakde/Customer-Churn-Prediction-using-ANN" class="block-20 zoom-effect" style="background-image: url('image/Customer_churn.png');">
+              </a>
+		  <div class="text mt-3 float-right d-block">
+			<h3 class="heading">
+				<a href="https://github.com/anjaliikakde/Customer-Churn-Prediction-using-ANN">
+					Customer Churn Prediction using ANN
+				</a>
+			</h3>
+			<p><strong>Technology Used:</strong> Artificial Neural Networks (ANN), TensorFlow/Keras, Scikit-learn, Streamlit</p>
+			<p><strong>Description:</strong> This project predicts whether a customer is likely to stop using a service by analyzing behavioral and transactional patterns. Using an ANN model trained on historical customer data, it identifies key churn indicators, such as reduced engagement or irregular payments. It is used in telecom, banking, and e-commerce to predict customer churn and enable proactive retention with real-time insights via a Streamlit app.</p>
+		</div>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+				<a href="https://github.com/anjaliikakde/SAR-Image-colorization-" class="block-20 zoom-effect" style="background-image: url('image/SAR_image_colorization.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="https://github.com/anjaliikakde/SAR-Image-colorization-">SAR Image Colorization</a></h3>
+					<p><strong>Technology Used:</strong> GANs (Pix2Pix), TensorFlow/Keras, HTML, CSS, JavaScript, MongoDB, Flask</p>
+					<p><strong>Description:</strong> Synthetic Aperture Radar (SAR) images are grayscale and difficult to interpret visually. This project develops a deep learning model using GANs to convert SAR images into realistic colorized optical images. By training on paired SAR-optical datasets, the model learns to reconstruct optical-like features while preserving structural details. This enhances the usability of SAR data in remote sensing applications like land cover classification, disaster monitoring, and urban planning.</p>
+				</div>
+			</div>
+          </div>
+
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="https://github.com/anjaliikakde/Sentiment-Analysis-IMDB" class="block-20 zoom-effect" style="background-image: url('image/sentiment_analysis.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">
+                  <a href="https://github.com/anjaliikakde/Sentiment-Analysis-IMDB">
+                    Sentiment Analysis of IMDB Movies Dataset
+                  </a>
+                </h3>
+                <p><strong>Technology Used:</strong> NLP, LSTM, TensorFlow/Keras, NLTK, Scikit-learn, Streamlit</p>
+                <p><strong>Description:</strong> This project analyzes the sentiment of movie reviews from the IMDB dataset, classifying them as positive or negative. Using an LSTM model, the system learns contextual dependencies in text, providing accurate sentiment predictions. It can be applied to movie reviews, customer feedback, and social media sentiment analysis. The project includes a Streamlit web interface for real-time review analysis.</p>
+              </div>
+            </div>
+          </div>
+		  </div>
+          
+   </section>
+
+   
+<!--  -->
+	<div class="row justify-content-center mt-5">
+		<div class="col-md-6 text-center ftco-animate">
+			<p><a href="https://github.com/anjaliikakde" class="btn btn-primary py-4 px-5">More Projects</a></p>
+		</div>
+	</div>
+
+	<section class="ftco-section" id="Blogs-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Blogs</h1>
+			  <h2 class="mb-4">Blogs</h2>
+			  <p>Since you have made it this far, I'd love to hear your views on some of the blogs that I've written.</p>
+			</div>
+		  </div>
+
+		
+		<div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://medium.com/@anjalikakde48/fake-it-till-you-make-it-the-ai-way-with-generative-adversarial-network-gans-b49d4f4fe79f" class="block-20 zoom-effect" style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zKff3Vb_qO6XAQa0IHdrtg.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+						<h3 class="heading"><a href="https://medium.com/@anjalikakde48/fake-it-till-you-make-it-the-ai-way-with-generative-adversarial-network-gans-b49d4f4fe79f">Fake it Till You Make it the AI Way with Generative Adversarial Networks (GANs)</a></h3>
+						<p>Explore how Generative Adversarial Networks (GANs) are changing the world of AI and creativity.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+					<a href="https://medium.com/@anjalikakde48/inside-gans-the-mathematical-game-between-generator-discriminator-2b63ffae69d4" class="block-20 zoom-effect" style="background-image: url('https://miro.medium.com/v2/resize:fit:720/format:webp/1*00CZjEvhQRJ1ftnkDhEPsQ.png');">
+					</a>
+					<div class="text mt-3 float-right d-block">
+						<h3 class="heading"><a href="https://medium.com/@anjalikakde48/fake-it-till-you-make-it-the-ai-way-with-generative-adversarial-network-gans-b49d4f4fe79f">Inside GANs: The Mathematical Game Between Generator & Discriminator</a></h3>
+
+					<p>Exploring the mathematical interplay between the generator and discriminator in GANs, revealing how they compete to create realistic outputs.</p>					</div>
+				</div>
+			</div>
+	
+
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+				<a href="https://medium.com/@anjalikakde48/u-net-58fdab044d7a" class="block-20 zoom-effect" style="background-image: url('https://miro.medium.com/v2/resize:fit:720/format:webp/0*3ybr4OI6gyQ6fHGB.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="https://medium.com/@anjalikakde48/fake-it-till-you-make-it-the-ai-way-with-generative-adversarial-network-gans-b49d4f4fe79f">
+						U-Net: Smarter Segmentation with Precision and Detail.</a></h3>
+
+				<p>Understanding the U-Net architecture and how it excels in image segmentation with its encoder-decoder structure. </p></div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+	  <div class="row justify-content-center mt-5">
+		<div class="col-md-6 text-center ftco-animate">
+			<p><a href="https://medium.com/@anjalikakde48" class="btn btn-primary py-4 px-5">More Blogs</a></p>
+		</div>
+	</div>
+	
+<!-- Certification section -->
+	  <section class="ftco-section" id="Certifications-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certifications</h1>
+			  <h2 class="mb-4">Certifications</h2>
+			  <p>Here are some of the certifications that I collected along my AI Journey.</p>
+			</div>
+		  </div>
+		  <!-- 1 -->
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.linkedin.com/learning/certificates/28bda55c1fd70f6def4cd81842f0a1f9197a0f37d39e51661c54c4e081ae8d69?trk=share_certificate" class="block-20 zoom-effect" style="background-image: url('image/Genai_M&L.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.linkedin.com/learning/paths/career-essentials-in-generative-ai-by-microsoft-and-linkedin">Career Essentials in Generative AI by Microsoft and LinkedIn</a></h3>
+				  <p>Issuer - Microsoft &amp; LinkedIn</p>
+				  <p>Learn data analysis, machine learning models, regression, classification, clustering, and business applications for data-driven decision making.</p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- next -->
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://www.kaggle.com/learn/certification/anjaliikakde/data-visualization" class="block-20 zoom-effect" style="background-image: url('image/data_visualization.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="#">Data Visualization</a></h3>
+				  <p>Issuer - Kaggle</p>
+				  <p>    
+					Learned to craft compelling visual stories using Matplotlib and Seaborn for data analysis.</p>
+				  </p>
+				</div>
+			  </div>
+			</div>
+
+			<!-- 3 -->
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://www.udemy.com/certificate/UC-06700026-23ca-4dda-8c68-99a5b40edc3c/" class="block-20 zoom-effect" style="background-image: url('image/maths.gif');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.udemy.com/share/10bAlt3@uvD2tnA8MGdYQBmnsSt9dqKIbcbRRFJuNFiJcAe4JoVtrXVPQ7AaPotrSdWlLRFpGA==/">Data Science Math Skills</a></h3>
+				  <p>Issuer - Udemy</p>
+				  <p> Learned Mathematics-Basics to Advanced for Data Science And GenAI on Udemy, taught by Krish Naik. This course covered essential mathematical concepts including calculus, linear algebra, probability, and statistics, providing a strong foundation for data science and machine learning.
+				  </p>
+				</div>
+			  </div>
+			</div>
+
+<!-- next2 -->
+<div class="col-md-4 d-flex ftco-animate">
+	<div class="blog-entry justify-content-end">
+	<a href="https://www.udemy.com/certificate/UC-7b98d6f4-aacf-4e86-b8cf-1168c572dc50/" class="block-20 zoom-effect" style="background-image: url('image/python.jpg');">
+	</a>
+	<div class="text mt-3 float-right d-block">
+
+	  <h3 class="heading"><a href=" https://www.udemy.com/course/python-complete-course-and-flask-framework-html-2024-edition/">Python Complete Course And Flask Framework, HTML Essentials</a></h3>
+	  <p>Issuer - Udemy</p>
+	  <p>Learned Python programming, Flask for web development, and HTML for interactive web pages.</p>
+	</div>
+  </div>
+</div>
+		
+
+
+<!-- <div class="col-md-4 d-flex ftco-animate">
+	<div class="blog-entry">
+	  <a href="  " 
+		 class="block-20 zoom-effect" 
+		 style="background-image: url(' ');">
+	  </a>
+	  <div class="text mt-3 float-right d-block">
+		<h3 class="heading">
+		  <a href=" "> Complete Data Science, Machine learning, Deep learning , NLP Bootcamp</a>
+		</h3>
+		<p>Issuer - Udemy</p>
+		<p>Gained hands-on expertise in data science, ML, DL, and NLP, mastering key algorithms, model building, and real-world applications.</p>
+		
+	  </div>
+	</div>
+  </div> -->
+
+  <!-- 5 -->
+<div class="col-md-4 d-flex ftco-animate">
+	<div class="blog-entry">
+	  <a href="https://drive.google.com/file/d/1TDatIWONa2OhJlfrXyIRdEBA2okv8cSV/view?usp=sharing" 
+		 class="block-20 zoom-effect" 
+		 style="background-image: url('image/data_science.gif');">
+	  </a>
+	  <div class="text mt-3 float-right d-block">
+		<h3 class="heading">
+		  <a href="https://onlinecourses.nptel.ac.in/noc24_cs42/announcements?force=true">NPTEL Certificate - Programming in C Language</a>
+		</h3>
+		<p>Issuer - NPTEL (IIT Kharagpur)</p>
+	  </div>
+	</div>
+  </div>
+
+</div>
+
+  
+	  <br>
+
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<h2> <a href="https://www.linkedin.com/in/anjali-kakde-009932238/details/certifications/" class="btn btn-primary py-3 px-5">More Certifications</a> </h2>
+			</div>
+		</div>
+	  </section>
+
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/sen.gif); background-size: 70% auto;">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/anjaliikakde" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<div id="app"></div>
+	<!-- Include the widget script from dist/modern or dist/legacy -->
+
+	
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bhopal , India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 6265035844</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">anjalikakde48@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="Anjali_resume.doc">Click Me</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/kicVGgtNdrZZ6qV19" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+				<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<li class="ftco-animate normal-txt">Let's connect over... </li>
+					<li class="ftco-animate"><a href="https://www.linkedin.com/in/anjali-kakde-009932238/"><span class="icon-linkedin"></span></a></li>  
+					<li class="ftco-animate"><a href="https://www.kaggle.com/anjaliikakde"><span class="fab fa-kaggle"></span></a></li>  
+					<li class="ftco-animate"><a href="https://medium.com/@anjalikakde48"><span class="icon-medium"></span></a></li>
+					
+				</ul>
+				
+				<br>
+		   </div>
+   </div>
+ </section>
+
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script type="module">
+	src="https://unpkg.com/docsgpt/dist/main.js"
+	window.onload = function () {
+	renderDocsGPTWidget("app", {
+	apiKey: "a4558c46-c1ce-4a6e-a713-f0ab315ea7df",
+	avatar: 'images/hrs.png',
+	size: "medium",
+	description: "Hrithik's clone",
+	heroTitle: "Hey there...",
+	heroDescription: 'Thanks for landing here. I am a digital twin of Hrithik Rai Saxena, feel free to ask any questions.',
+	});
+	};
+	</script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
